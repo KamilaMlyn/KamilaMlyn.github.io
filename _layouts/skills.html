@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{%- assign _skills = site.sections_skills | sort: 'date' | reverse -%}
+{%- assign _skills = site.sections_skills | sort: 'order' -%}
 {%- include header.html scrolly_nav=_skills -%}
 <!-- Main -->
 <div id="main">
@@ -17,7 +17,7 @@ layout: default
 
 			<p>{{- _skill.description -}}</p>
 
-			<a href="{{- _skill.url | absolute_url -}}">Sprawdź</a>
+			<!--a href="{{- _skill.url | absolute_url -}}">Sprawdź</a-->
 		</section>
 	{%- endfor -%}
 </div>
