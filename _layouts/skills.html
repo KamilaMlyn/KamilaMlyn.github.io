@@ -1,15 +1,23 @@
 ---
 layout: default
 ---
-{%- assign _sections = site.sections-skills | sort: 'order' -%}
-{%- include header.html scrolly_nav=_sections -%}
+{%- assign _skills = site.sections_skills | sort: 'date' | reverse -%}
+{%- include header.html scrolly_nav=_skills -%}
 <!-- Main -->
 <div id="main">
 	{%- if page.content != "" -%}
 		{%- include section.html title=page.title photo=page.cover-photo photo-alt=page.cover-photo-alt auto-header=page.auto-header content=page.content -%}
 	{%- endif -%}
-	<!-- Sections -->
-	{%- for _section in _sections -%}
-		{%- include section.html title=_section.title photo=_section.cover-photo photo-alt=_section.cover-photo-alt auto-header=_section.auto-header content=_section.content -%}
+	<!-- Skills List -->
+	{%- for _skill in _skills -%}
+		<section>
+			<header>
+				<h3>{{- _skill.title -}}</h3>
+			</header>
+
+			<p>{{- _skill.description -}}</p>
+
+			<a href="{{- _skill.url | absolute_url -}}">Sprawdź</a>
+		</section>
 	{%- endfor -%}
 </div>
