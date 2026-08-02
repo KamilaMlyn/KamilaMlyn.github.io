@@ -10,15 +10,7 @@ layout: default
 	{%- endif -%}
 	<!-- Skills List -->
 	{%- for _skill in _skills -%}
-		<section>
-			<header>
-				<h3>{{- _skill.title -}}</h3>
-			</header>
-
-			<p>{{- _skill.description -}}</p>
-
-			<a href="{{- _skill.url | absolute_url -}}">Sprawdź</a>
-		</section>
-		{%- include section.html -%}
+		{%- capture _link -%}<a href="{{- _skill.url | absolute_url -}}">Sprawdź</a>{%- endcapture -%}
+		{%- include section.html title=_skill.title subtitle=_skill.description content=_link -%}
 	{%- endfor -%}
 </div>
