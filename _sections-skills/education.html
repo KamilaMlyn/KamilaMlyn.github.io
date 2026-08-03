@@ -3,6 +3,7 @@ title: Edukacja
 icon: fa-graduation-cap
 order: 1
 ---
+
 <div class="row">
     {% for e in site.data.education %}
         <div class="6u 12u$(mobile)">
@@ -16,11 +17,15 @@ order: 1
                 {% if e.date %}
                     <p>{{e.date}}</p>
                 {% endif %}
-                {% if e.description %}
-                    <p>{{e.description}}</p>
-                {% endif %}
-                {% if e.description2 %}
-                    <p>{{e.description2}}</p>
+                {% if e.description and e.description2 %}
+                    <p>{{e.description}}<br>{{e.description2}}</p>
+                {% else %}
+                    {% if e.description %}
+                        <p>{{e.description}}</p>
+                    {% endif %}
+                    {% if e.description2 %}
+                        <p>{{e.description2}}</p>
+                    {% endif %}
                 {% endif %}
             </div>
         </div>
