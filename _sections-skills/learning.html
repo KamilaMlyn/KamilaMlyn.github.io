@@ -3,3 +3,21 @@ title: Uczę się
 icon: fa-compass
 order: 5
 ---
+
+<div class="row">
+    {% for l in site.data.learning %}
+        <div class="6u 12u$(mobile)">
+            <div class="item">
+                {% if l.image %}
+                    <a href="#" class="image fit"><img src="{{ l.image | relative_url }}"/></a>
+                {% endif %}
+                {% if h.name %}
+                    <h1>{{h.name}}</h1>
+                {% endif %}
+                {% if h.description %}
+                    <p>{{h.description}}</p>
+                {% endif %}
+            </div>
+        </div>    
+    {% endfor %}
+</div>
