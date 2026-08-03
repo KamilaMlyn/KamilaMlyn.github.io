@@ -3,3 +3,38 @@ title: Certyfikaty
 icon: fa-certificate
 order: 2
 ---
+<div class="cert-grid">
+    {% for c in site.data.certificates | sort: 'date' | reverse %}
+        <div>
+            {% if c.image %}
+                <a href="#" class="image fit"><img src="{{ e.image | relative_url }}"/></a>
+            {% endif %}
+        </div>
+
+        <div>
+            {% if c.name %}
+                {{c.name}}
+            {% endif %}
+        </div>
+
+        <div>
+            {% if c.organization %}
+                {{c.organization}}
+            {% endif %}
+        </div>
+
+        <div>
+            {% if c.date %}
+                {{c.date}}
+            {% endif %}
+        </div>
+
+        <div>
+            {% if c.link %}
+                <a href="{{ c.link }}" target="_blank" rel="noopener">Certyfikat</a>
+            {% else %}
+                <a href="#" target="_blank" rel="noopener">Certyfikat</a>
+            {% endif %}
+        </div>
+    {% endfor %}
+</div>

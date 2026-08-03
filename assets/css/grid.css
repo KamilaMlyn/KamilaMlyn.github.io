@@ -1,0 +1,8 @@
+.cert-grid {
+    display: grid;
+    grid-auto-columns: min-content;
+    gap: 0.5rem 2rem;
+}
+.cert-grid > div {
+    padding: 0.2rem 0;
+}
