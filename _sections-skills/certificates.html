@@ -3,8 +3,9 @@ title: Certyfikaty
 icon: fa-certificate
 order: 2
 ---
-<div class="cert-grid">
-    {% for c in site.data.certificates | sort: 'date' | reverse %}
+
+{% for c in site.data.certificates | sort: 'date' | reverse %}
+    <div class="cert-row">
         <div>
             {% if c.image %}
                 <a href="#" class="image fit"><img src="{{ e.image | relative_url }}"/></a>
@@ -36,5 +37,6 @@ order: 2
                 <a href="#" target="_blank" rel="noopener">Certyfikat</a>
             {% endif %}
         </div>
-    {% endfor %}
-</div>
+    </div>
+{% endfor %}
+

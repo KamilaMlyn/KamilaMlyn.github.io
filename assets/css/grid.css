@@ -4,3 +4,11 @@
     gap: 0.5rem 1rem;
     align-items: center;
 }
+
+.cert-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr auto;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
