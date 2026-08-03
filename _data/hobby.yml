@@ -1,26 +1,35 @@
 - name: pilates
   description:
+  image:
 
 - name: gra na pianinie
   description: 
+  image:
 
 - name: nanogramy
   description:
+  image:
 
 - name: szycie na maszynie
   description:
+  image:
 
 - name: książki
   description:
+  image:
 
 - name: świeczki
   description:
+  image:
 
 - name: IoT
   description:
+  image:
 
 - name: filmy, seriale, anime
   description:
+  image:
 
 - name: rośliny
   description:
+  image:

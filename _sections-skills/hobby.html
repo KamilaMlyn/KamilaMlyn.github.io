@@ -3,3 +3,21 @@ title: Hobby
 icon: fa-star
 order: 4
 ---
+
+<div class="row">
+    {% for h in site.data.hobby %}
+        <div class="4u 12u$(mobile)">
+            <div class="item">
+                {% if h.image %}
+                    <a href="#" class="image fit"><img src="{{ h.image | relative_url }}"/></a>
+                {% endif %}
+                {% if h.name %}
+                    <h1>{{h.name}}</h1>
+                {% endif %}
+                {% if h.description %}
+                    <p>{{h.description}}</p>
+                {% endif %}
+            </div>
+        </div>    
+    {% endfor %}
+</div>
