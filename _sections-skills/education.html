@@ -11,21 +11,14 @@ order: 1
                 {% if e.image %}
                     <a href="#" class="image fit"><img src="{{ e.image | relative_url }}"/></a>
                 {% endif %}
-                {% if e.name %}
-                    <p>{{e.name}}</p>
-                {% endif %}
-                {% if e.date %}
-                    <p>{{e.date}}</p>
-                {% endif %}
+                <p>{{e.name}}</p>
+                <p>{{e.date}}</p>
                 {% if e.description and e.description2 %}
                     <p>{{e.description}}<br>{{e.description2}}</p>
                 {% else %}
-                    {% if e.description %}
                         <p>{{e.description}}</p>
-                    {% endif %}
-                    {% if e.description2 %}
                         <p>{{e.description2}}</p>
-                    {% endif %}
+                        <p>{{e.description3}}</p>
                 {% endif %}
             </div>
         </div>

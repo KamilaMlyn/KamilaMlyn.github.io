@@ -13,16 +13,15 @@ order: 3
                     <a href="#" class="image fit"><img src="{{ e.image | relative_url }}"/></a>
                 {% endif %}
                 {% if e.name %}
-                    <h1>{{e.name}}</h1>
+                    <h2>{{e.name}}</h2>
                 {% endif %}
                 <p>
-                    {% if e.date %}
-                        <h2>{{e.date}}</h2><br>
-                    {% endif %}
-                    {% if e.description %}
-                        {{e.description}}
-                    {% endif %}
+                    <h1>{{e.date}}</h1><br>
+                    {{e.description}}
                 </p>
+                {% if c.link %}
+                    <a href="{{ e.github }}" target="_blank" rel="noopener">GitHub</a>
+                {% endif %}
             </div>
         </div>    
     {% endfor %}

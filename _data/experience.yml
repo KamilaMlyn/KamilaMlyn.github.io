@@ -7,18 +7,41 @@
   description: Aplikacja mobilna na platformę Android napisana w języku Kotlin, wspierająca naukę gry na pianinie, będąca moim projektem inżynierskim. Zawiera model sieci neuronowej w języku Python, lokalną bazę danych Room, chmurowe bazy danych Firebase Reatime Database i Firebase Storage, UI napisane z wykorzystaniem JetPack Compose. Wykorzystano GitHub, Google Colab oraz Google Drive.
   date: 08.2024 – 12.2024
   image:
+  github: https://github.com/KamilaMlyn/PolSl/tree/main/Arpeggia_Kotlin_Python_ROOM/PianoApp
 
 - name: Dziennik elektroniczny
   description: Aplikacja webowa napisana z wykorzystaniem ASP.Net (Web Forms), C#, zawierająca bazę danych Micfosoft SQL Server. Dostęp do danych bazy był realizowany poprzez klasy repozytoriów i encji. Projekt był wykonywany grupowo, gdzie moją rolą było stworzenie UI oraz zaimplementowanie funkcjonalności stron obecności oraz ocen z punktu widzenia użytkownika będącego uczniem, rodzicem lub nauczycielem, a także dodawania przez nauczyciela aktywności (sprawdziany, kartkówki,…). Wykorzystano oprogramowanie Miro oraz GitHub.
   date: 02.2024 – 06.2024
   image:
+  github:
 
 - name: Hedgehog Havoc
   description: Pierwszoosobowa gra RPG utworzona z wykorzystaniem silnika Unity oraz skryptów w C#. Projekt był wykonywany grupowo, gdzie moją rolą było utworzenie kreatora głównej postaci, NPC i głównej postaci (sprite’y, prefaby, animacje), przedmiotów w grze, efektu ząsteczkowego oraz dodanie muzyki i efektów dźwiękowych do gry. Wykorzystano oprogramowanie Jira oraz GitHub
   date: 02.2024 – 06.2024
   image:
+  github:
 
 - name: Przepiśnik
   description: Aplikacja okienkowa umożliwiająca zarządzanie przepisami, składnikami oraz tworzenie list zakupów, posiadająca funkcjonalność kalkulatora kalorii. Program, stworzony w języku C++ z wykorzystaniem obiektowości, C++/CLI Windows Forms, oferuje dynamiczne dodawanie przepisów i składników, obsługę wielu użytkowników oraz zapisywanie danych do plików tekstowych.
   date: 02.2023 – 06.2023
   image:
+  github: https://github.com/KamilaMlyn/PolSl/tree/main/Przepi%C5%9Bnik_C%2B%2B_WinForms
+
+- name: Zbiór
+  description: Implementacja zbioru liczb całkowitych w języki C++. Zawiera między innymi operacje dodawania, usuwania elementów oraz przeciążone operatory podstawowych operacji na zbiorze.
+  date: 10.2022 - 01.2023
+  image:
+  github: https://github.com/KamilaMlyn/PolSl/tree/main/Zbi%C3%B3r_C%2B%2B
+  
+- name: Książka kucharska
+  description: Aplikacja konsolowa C++ stanowiąca ułatwienie w przyrządzaniu potraw. Umożliwia dodawanie nowych przepisów, wyświetlanie przepisu w dwóch trybach dzięki zastosowaniu wzorca projektowego Strategii. Wykonany przy użyciu programowania obiektowego. 
+  date: 02.2022 - 06.2022
+  image:
+  github: https://github.com/KamilaMlyn/PolSl/tree/main/Ksi%C4%85%C5%BCka%20kucharska_C%2B%2B
+
+- name: Grupowanie metodą k-średnich
+  description: Implementacja grupowania algorytmem k-średnich w języku C++. Program uruchamiany jest  z linii poleceń z przełącznikami dotyczącymi pliku wejściowego jak i wyjściowego, liczby klastrów, w które należy pogrupować punkty oraz liczbę wymiarów punktów. 
+  date: 10.2021 - 01.2022
+  image:
+  github: https://github.com/KamilaMlyn/PolSl/tree/main/Grupowanie%20metod%C4%85%20k-%C5%9Brednich%20_C%2B%2B
+  
