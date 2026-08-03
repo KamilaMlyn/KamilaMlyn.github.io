@@ -4,3 +4,23 @@ description: zawodowe jak i pozazawodowe
 icon: fa-briefcase
 order: 3
 ---
+<div class="row">
+    {% for e in site.data.experience %}
+        <div class="4u 12u$(mobile)">
+            <div class="item">
+                {% if e.image %}
+                    <a href="#" class="image fit"><img src="{{ e.image | relative_url }}"/></a>
+                {% endif %}
+                <p>
+                    {% if e.date %}
+                        {{e.date}}<br>
+                    {% endif %}
+                    {% if e.description %}
+                        {{e.description}}
+                    {% endif %}
+                </p>
+            </div>
+        </div>    
+        {% if e.image %}
+    {% endfor %}
+</div>

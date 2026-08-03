@@ -7,7 +7,7 @@
 
 .cert-row {
     display: grid;
-    grid-template-columns: 2fr 1fr auto;
+    grid-template-columns: auto auto auto auto auto;
     gap: 1rem;
     align-items: center;
     margin-bottom: 0.75rem;
