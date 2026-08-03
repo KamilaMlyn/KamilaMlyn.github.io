@@ -28,7 +28,7 @@
   github: https://github.com/KamilaMlyn/PolSl/tree/main/Przepi%C5%9Bnik_C%2B%2B_WinForms
 
 - name: Zbiór
-  description: Implementacja zbioru liczb całkowitych w języki C++. Zawiera między innymi operacje dodawania, usuwania elementów oraz przeciążone operatory podstawowych operacji na zbiorze.
+  description: Implementacja zbioru liczb całkowitych w języku C++. Zawiera między innymi operacje dodawania, usuwania elementów oraz przeciążone operatory podstawowych matematycznych operacji na zbiorze takie jak dodawanie, odejmowanie, część wspólna zbioru. Plik wykonywalny przedstawia przykładowe użycie utworzonych metod oraz komentarze opisujące działanie.
   date: 10.2022 - 01.2023
   image:
   github: https://github.com/KamilaMlyn/PolSl/tree/main/Zbi%C3%B3r_C%2B%2B

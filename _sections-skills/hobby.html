@@ -11,12 +11,8 @@ order: 4
                 {% if h.image %}
                     <a href="#" class="image fit"><img src="{{ h.image | relative_url }}"/></a>
                 {% endif %}
-                {% if h.name %}
-                    <h2>{{h.name}}</h2>
-                {% endif %}
-                {% if h.description %}
+                    <p>{{h.name}}</p>
                     <p>{{h.description}}</p>
-                {% endif %}
             </div>
         </div>    
     {% endfor %}
