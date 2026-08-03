@@ -12,9 +12,12 @@ order: 3
                 {% if e.image %}
                     <a href="#" class="image fit"><img src="{{ e.image | relative_url }}"/></a>
                 {% endif %}
+                {% if e.name %}
+                    <h1>{{e.name}}</h1>
+                {% endif %}
                 <p>
                     {% if e.date %}
-                        {{e.date}}<br>
+                        <h2>{{e.date}}</h2><br>
                     {% endif %}
                     {% if e.description %}
                         {{e.description}}

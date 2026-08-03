@@ -1,14 +1,13 @@
-.cert-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr auto;
-    gap: 0.5rem 1rem;
-    align-items: center;
-}
-
 .cert-row {
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: 80px 3fr 2fr 1fr auto;
     gap: 1rem;
     align-items: center;
-    margin-bottom: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.cert-image img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
 }
