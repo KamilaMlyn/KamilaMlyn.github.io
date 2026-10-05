@@ -1,4 +1,4 @@
-#Witam w moim portfolio.
+# Witam w moim portfolio.
 
 **Link do striny:** <https://kamilamlyn.github.io/>
 
